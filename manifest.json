@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Vmuzey id viewer by Rubyroot",
+  "version": "1.0",
+  "description": "Script for displaying event ID on PRO.Kultura",
+  "author": "Denis Pisarevskih aka Rubyroot",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://organization.vmuzey.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
